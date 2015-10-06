@@ -21,10 +21,6 @@ echo ""
 echo -e "\e[31;43m***** Update php5-mysql package *****\e[0m"
 sudo apt-get install php5-mysql
 echo ""
-#Check if apache and mysql are running
-echo -e "\e[31;43m***** Check running processes *****\e[0m"
-ps -ef
-echo""
 #-Install git
 echo -e "\e[31;43m***** Install git *****\e[0m"
 sudo apt-get install git
@@ -37,10 +33,7 @@ echo""
 echo -e "\e[31;43m***** Clone git *****\e[0m"
 sudo git clone https://github.com/awolde/sample-php.git
 echo""
-#-Check the directory
-echo -e "\e[31;43m***** Check Directory *****\e[0m"
-ls -l
-echo""
+
 
 exit
 
