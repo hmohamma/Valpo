@@ -1,0 +1,46 @@
+#!/bin/bash
+#script for automating the commands to implement LAMP server
+
+#-Update information from online repositories
+echo -e "\e[31;43m***** Update Ubuntu Repositories *****\e[0m"
+sudo apt-get update
+echo ""
+#-Update apache2 package
+echo -e "\e[31;43m***** Update apache2 packacge *****\e[0m"
+sudo apt-get install apache2
+echo ""
+#-Update mysql-server package
+echo -e "\e[31;43m***** Update mysql-server package *****\e[0m"
+sudo apt-get install mysql-server
+echo ""
+#-Update php5 package
+echo -e "\e[31;43m***** Update php5 package *****\e[0m"
+sudo apt-get install php5
+echo ""
+#-Update php5-mysql package
+echo -e "\e[31;43m***** Update php5-mysql package *****\e[0m"
+sudo apt-get install php5-mysql
+echo ""
+#Check if apache and mysql are running
+echo -e "\e[31;43m***** Check running processes *****\e[0m"
+ps -ef
+echo""
+#-Install git
+echo -e "\e[31;43m***** Install git *****\e[0m"
+sudo apt-get install git
+echo""
+#-Goto destination
+echo -e "\e[31;43m***** File Destination *****\e[0m"
+cd /var/www/html
+echo""
+#-Clone git
+echo -e "\e[31;43m***** Clone git *****\e[0m"
+sudo git clone https://github.com/awolde/sample-php.git
+echo""
+#-Check the directory
+echo -e "\e[31;43m***** Check Directory *****\e[0m"
+ls -l
+echo""
+
+exit
+
