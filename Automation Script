@@ -7,23 +7,23 @@ sudo apt-get update
 echo ""
 #-Update apache2 package
 echo -e "\e[31;43m***** Update apache2 packacge *****\e[0m"
-sudo apt-get install apache2
+sudo apt-get install -y apache2
 echo ""
 #-Update mysql-server package
 echo -e "\e[31;43m***** Update mysql-server package *****\e[0m"
-sudo apt-get install mysql-server
+sudo apt-get install -y mysql-server
 echo ""
 #-Update php5 package
 echo -e "\e[31;43m***** Update php5 package *****\e[0m"
-sudo apt-get install php5
+sudo apt-get install -y php5
 echo ""
 #-Update php5-mysql package
 echo -e "\e[31;43m***** Update php5-mysql package *****\e[0m"
-sudo apt-get install php5-mysql
+sudo apt-get install -y php5-mysql
 echo ""
 #-Install git
 echo -e "\e[31;43m***** Install git *****\e[0m"
-sudo apt-get install git
+sudo apt-get install -y git
 echo""
 #-Goto destination
 echo -e "\e[31;43m***** File Destination *****\e[0m"
